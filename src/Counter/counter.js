@@ -34,11 +34,12 @@ export default class Counter extends Component {
     }
 
     render(){
+        const {count} = this.state;
         return (
             <div className='wrap'>
-                <h1>{this.state.count}</h1>
+                <h1>{count}</h1>
                 <div>
-                    <button className={`decrement ${this.state.count === 0 ? 'disabled' : ''}`} onClick={this.handleClick('dec')} >decrement</button>
+                    <button className={`decrement ${!count ? 'disabled' : ''}`} onClick={this.handleClick('dec')} >decrement</button>
                     <button className='increment' onClick={this.handleClick('inc')}>increment</button>
                     <button className='reset' onClick={this.handleClick('reset')}>reset</button>
                 </div>
