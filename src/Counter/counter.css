@@ -41,11 +41,17 @@ h1 {
     background: #fefefe;
     margin-top: 10px;
     margin-bottom: 10px;
-    transition: transform 60ms ease-out;
+    transition: color 1s ease-out;
     cursor: pointer;
     text-size-adjust: 20px;
     width: 80px;
     background-color: #ccc;
+    opacity: 0.8;
+}
+
+
+button:hover {
+    color: lightslategray;    
 }
 
 .disabled{

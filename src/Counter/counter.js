@@ -41,7 +41,7 @@ export default class Counter extends Component {
                 <div>
                     <button className={`decrement ${!count ? 'disabled' : ''}`} onClick={this.handleClick('dec')} >decrement</button>
                     <button className='increment' onClick={this.handleClick('inc')}>increment</button>
-                    <button className='reset' onClick={this.handleClick('reset')}>reset</button>
+                    <button className={`reset ${!count ? 'disabled' : ''}`} onClick={this.handleClick('reset')}>reset</button>
                 </div>
             </div>
         )
