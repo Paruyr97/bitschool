@@ -28,7 +28,8 @@ export default class Counter extends Component {
                 case 'reset':
                     this.setState({ count: 0 });
                     break;
-
+                default:
+                    throw new Error();
             }
         }
     }
