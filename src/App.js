@@ -1,10 +1,10 @@
 import './App.css';
-import Animal from './animals/animals';
+import Todo from './todo-app/todo';
 
 function App() {
   return (
     <div className="App">
-      <Animal animals={['rex', 'murka', 'chao', 'flyuk', 'kity', 'bety']}/>
+      <Todo/>
     </div>
   );
 }
