@@ -15,7 +15,7 @@ export default class Todo extends Component {
     addTodo = () => {
         const {inputValue, todos} = this.state;
         const newTodos = [...todos, inputValue]
-        this.setState({todos: newTodos, inputValue: ''})
+        inputValue.trim() && this.setState({todos: newTodos, inputValue: ''})
     }
 
     render(){
